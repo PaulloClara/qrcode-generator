@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="qrcode.js" charset="utf-8"></script>
+
+    <title>QRCode Generator</title>
+  </head>
+  <body>
+    <header>
+      <form id="urlForm" onsubmit="handleUrlSubmit(event)">
+        <input
+          class="input url"
+          type="url"
+          title="QRCode URL"
+          placeholder="https://google.com"
+          required
+        />
+        <button class="button submit" type="submit" title="Generate New QRCode">
+          Generate
+        </button>
+      </form>
+    </header>
+
+    <main>
+      <div id="qrcode"></div>
+    </main>
+
+    <footer>
+      <a
+        id="qrcodeDownload"
+        class="button download"
+        title="QRCode Download"
+        href="#"
+        download="qrcode.png"
+      >
+        Download
+      </a>
+    </footer>
+
+    <script src="scripts.js" charset="utf-8"></script>
+  </body>
+</html>
