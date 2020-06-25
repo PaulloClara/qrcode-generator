@@ -4,8 +4,8 @@ const downloadButtonEl = document.querySelector("#qrcodeDownload");
 
 const qrcodeOpts = {
   text: "https://google.com",
-  width: 128,
-  height: 128
+  width: parseInt(window.innerHeight / 2),
+  height: parseInt(window.innerHeight / 2)
 };
 const qrcode = new QRCode(qrcodeEl, qrcodeOpts);
 

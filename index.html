@@ -9,6 +9,8 @@
   </head>
   <body>
     <header>
+      <h1>QRCode Generator</h1>
+
       <form id="urlForm" onsubmit="handleUrlSubmit(event)">
         <input
           class="input url"
@@ -16,6 +18,7 @@
           title="QRCode URL"
           placeholder="https://google.com"
           required
+          autofocus
         />
         <button class="button submit" type="submit" title="Generate New QRCode">
           Generate
